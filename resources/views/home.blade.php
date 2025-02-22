@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
-
+                <img src="{{ asset('img/download.JPG') }}" class="img-fluid" alt="">
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -14,10 +14,12 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Welcome ') }}
                     {{ Auth::user()->name }}
-                </div>
+                    {{ __(', You are logged in!') }}
+                    </div>
             </div>
+            
         </div>
     </div>
 </div>
